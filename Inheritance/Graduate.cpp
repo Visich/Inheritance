@@ -17,11 +17,17 @@ Graduate::Graduate
 ) :Student(name, age, specialty, year, karma)
 {
 	this->diploma_theme = diploma_theme;
+#ifdef DEBUG
 	cout << "GConstructor:\t" << this << endl;
+#endif // DEBUG
+
 }
 Graduate::~Graduate()
 {
+#ifdef DEBUG
 	cout << "Gdestructor:\t" << this << endl;
+#endif // DEBUG
+
 }
 
 //			Methods:

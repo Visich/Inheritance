@@ -35,11 +35,17 @@ Teacher::Teacher
 	this->specialty = specialty;
 	this->xp = xp;
 	this->evil = evil;
+#ifdef DEBUG
 	cout << "TConstructor:\t" << this << endl;
+#endif // DEBUG
+
 }
 Teacher::~Teacher()
 {
+#ifdef DEBUG
 	cout << "TDestructor:\t" << this << endl;
+#endif // DEBUG
+
 }
 
 
@@ -55,7 +61,7 @@ void Teacher::info()
 
 ostream & operator<<(ostream & os, const Teacher & obj)
 {
-	os << (Human)obj;
+	os << (Human&)obj;
 	return os << ", специальность: " << obj.get_specialty()
 		<< ", опыт преподавания" << obj.get_xp() << " лет, уровень злости:"
 		<< obj.get_evil() << "%";
