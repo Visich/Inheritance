@@ -34,11 +34,16 @@ Student::Student
 	this->specialty = specialty;
 	this->year = year;
 	this->karma = karma;
+#ifdef DEBUG
 	cout << "SConstructor:\t" << this << endl;
+#endif // DEBUG
+
 }
 Student::~Student()
 {
+#ifdef DEBUG
 	cout << "SDestructor:\t" << this << endl;
+#endif // DEBUG
 }
 
 //			Methods:

@@ -18,12 +18,12 @@ void main()
 	cout << durko << endl;
 	cout << delimiter << endl;
 
-	Teacher pablo("Pablo Escobar", 40, "Распространение наркотиков", 25, 50);
-	pablo.info();
-	//cout << pablo << endl;
+	Teacher pablo("Pablo Escobar", 40, "Массовое производство наркотиков", 25, 50);
+	//pablo.info();
+	cout << pablo << endl;
 
 	Graduate tony
 	("Antonio Montana", 22,	"Распространение наркотиков", 5, 90, "Работа с проблемной задолженностью");
-	tony.info();
-	//cout << tony << endl;
+	//tony.info();
+	cout << tony << endl;
 }

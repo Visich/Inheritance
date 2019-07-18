@@ -24,3 +24,5 @@ public:
 	//			Methods:
 	void info();
 };
+
+ostream& operator<<(ostream& os, const Teacher& obj);
